@@ -1,0 +1,87 @@
+:root {
+    --primary-black: #0a0a0a;
+    --secondary-black: #1a1a1a;
+    --accent-yellow: #ffd700;
+    --bright-yellow: #ffed4a;
+    --dark-yellow: #b8860b;
+    --text-white: #ffffff;
+    --text-gray: #cccccc;
+    --gradient-primary: linear-gradient(135deg, var(--primary-black) 0%, var(--secondary-black) 100%);
+    --gradient-accent: linear-gradient(135deg, var(--accent-yellow) 0%, var(--bright-yellow) 100%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body{
+    height: 100vh;
+    color: var(--text-white);
+    background: var(--gradient-primary);
+    overflow-x: hidden;
+    padding:0 40px;
+}
+
+.nav-bar {
+    height: 70px;
+    width: 100vw;
+    background-color: var(--primary-black);
+    display:flex;
+    flex-direction: row;
+    gap: 5rem;
+    place-items: center;
+    place-content: space-between;
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent-yellow);
+    text-decoration: none;
+}
+.nav-links{
+    /* border: 1px white solid; */
+    /* flex: 3; */
+    width: 50vw;
+    justify-content: center;
+    display: flex;
+    gap: 1.5rem;
+    /* font-size: 20px; */
+}
+.nav-links a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: var(--text-gray);
+    will-change: color;
+    transition: color .3s;
+    width: 60px;
+    position: relative;
+}
+
+.nav-links a::before{
+    content: "";
+    position: absolute;
+    top: 25px;
+    /* left: 50%; */
+    /* transform: translateX(-5px); */
+    background-color: var(--dark-yellow);
+    width: 0;
+    height: 2px;
+    transition: all .3s;
+}
+
+.nav-links a:hover::before{
+    width: 100%;
+}
+
+.nav-links a:hover{
+    color: var(--accent-yellow);
+}
