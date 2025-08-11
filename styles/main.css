@@ -79,6 +79,7 @@ body{
     content: "";
     position: absolute;
     top: 25px;
+    /* transform: translateY(-30px); */
     /* left: 50%; */
     /* transform: translateX(-5px); */
     background-color: var(--dark-yellow);
@@ -87,13 +88,14 @@ body{
     transition: all .3s;
 }
 
+.nav-links a:hover{
+    color: var(--accent-yellow);
+}
+
 .nav-links a:hover::before{
     width: 100%;
 }
 
-.nav-links a:hover{
-    color: var(--accent-yellow);
-}
 .hamburger {
     display: none;
     place-content: center;
