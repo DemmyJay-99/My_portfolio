@@ -27,8 +27,8 @@
         gap: 2rem;
         top: 70px;
         left: 0;
-        width: 100vw;
-        height: 60%;
+        width: 95vw;
+        max-height: 100vh;
         padding-top: 30px;
         padding: 20px;
         overflow: hidden;
@@ -46,5 +46,11 @@
     }
     .bar{
         display: block;
+    }
+}
+
+@media (max-width:480px) {
+    .nav-links{
+        width: 90vw;
     }
 }
