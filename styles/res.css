@@ -1,0 +1,16 @@
+@media (max-width: 780px) {
+    html{
+        overflow: hidden;
+    }
+    .nav-links{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+        position: absolute;
+        right: 40px;
+    }
+    .bar{
+        display: block;
+    }
+}
