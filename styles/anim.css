@@ -1,0 +1,8 @@
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px var(--accent-yellow);
+    }
+    to {
+        text-shadow: 0 0 10px var(--accent-yellow), 0 0 30px var(--accent-yellow);
+    }
+}
