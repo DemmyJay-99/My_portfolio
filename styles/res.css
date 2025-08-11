@@ -1,9 +1,38 @@
+:root {
+    --primary-black: #0a0a0a;
+    --secondary-black: #1a1a1a;
+    --accent-yellow: #ffd700;
+    --bright-yellow: #ffed4a;
+    --dark-yellow: #b8860b;
+    --text-white: #ffffff;
+    --text-gray: #cccccc;
+    --gradient-primary: linear-gradient(135deg, var(--primary-black) 0%, var(--secondary-black) 100%);
+    --gradient-accent: linear-gradient(135deg, var(--accent-yellow) 0%, var(--bright-yellow) 100%);
+}
+
 @media (max-width: 780px) {
     html{
         overflow: hidden;
     }
     .nav-links{
+        all: unset;
         display: none;
+        place-content: start;
+        place-items: start;
+        flex-direction: column;
+        gap: 2rem;
+        top: 70px;
+        left: 0;
+        min-width: 100vw;
+        height: 60%;
+        padding-top: 30px;
+        padding: 20px;
+        overflow: hidden;
+        position: absolute;
+        background-color:var(--primary-black);
+    }
+    .nav-links.show{
+        display: flex;
     }
     .hamburger{
         display: flex;
