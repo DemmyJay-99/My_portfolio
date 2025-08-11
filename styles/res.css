@@ -10,6 +10,10 @@
     --gradient-accent: linear-gradient(135deg, var(--accent-yellow) 0%, var(--bright-yellow) 100%);
 }
 
+*{
+    overflow: hidden;
+}
+
 @media (max-width: 780px) {
     html{
         overflow: hidden;
@@ -23,13 +27,14 @@
         gap: 2rem;
         top: 70px;
         left: 0;
-        min-width: 100vw;
+        width: 87vw;
         height: 60%;
         padding-top: 30px;
         padding: 20px;
         overflow: hidden;
         position: absolute;
         background-color:var(--primary-black);
+        animation: fall 0.8s ease-out both alternate;
     }
     .nav-links.show{
         display: flex;
