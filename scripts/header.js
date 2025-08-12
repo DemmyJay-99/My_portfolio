@@ -3,7 +3,6 @@ const nav = document.getElementById('nav-links');
 const body = document.querySelector('body');
 
 hamburger.addEventListener('click', () => {
-    nav.classList.toggle('show');
-    body.style.overflow = "hidden";
-}
-)
+    const isOpen = nav.classList.toggle('show');
+    body.style.overflowY = isOpen ? 'hidden' : 'auto';
+});

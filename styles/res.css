@@ -11,14 +11,11 @@
 }
 
 
-@media (max-width: 780px) {
-    *{
-        overflow: hidden;
-    }
+@media (max-width: 768px) {
     html{
-        overflow: hidden;
+        overflow-x: hidden;
     }
-    .nav-links{
+     .nav-links{
         all: unset;
         display: none;
         place-content: start;
@@ -27,14 +24,25 @@
         gap: 2rem;
         top: 70px;
         left: 0;
-        width: 95vw;
+        width: 100vw;
         max-height: 100vh;
         padding-top: 30px;
-        padding: 20px;
+        padding: 40px;
+        box-sizing: border-box;
         overflow: hidden;
-        position: absolute;
+        position: fixed;
         background-color:var(--primary-black);
         animation: fall 0.8s ease-out both alternate;
+        a{
+            font-size: 2rem;
+        }
+        a::before{
+            content: "";
+            position: absolute;
+            background-color: #b8860b;
+            width: 100%;
+            top: 40px;
+        }
     }
     .nav-links.show{
         display: flex;
@@ -46,11 +54,5 @@
     }
     .bar{
         display: block;
-    }
-}
-
-@media (max-width:480px) {
-    .nav-links{
-        width: 90vw;
     }
 }
