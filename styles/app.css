@@ -18,38 +18,34 @@
     padding: 0;
 }
 
-html {
+html{
     scroll-behavior: smooth;
-    font-size: 16px;
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    height: 100%;
     overflow-x: hidden;
-    min-width: 100vw;
 }
 
 body{
-     height: 100vh;
-    /* width: 100vw;  */
     color: var(--text-white);
     background: var(--gradient-primary);
-    /* overflow: hidden; */
 }
 
-.nav-bar {
-    height: 70px;
-    width: 100vw;
-    margin-bottom: 30px;
-    background-color: var(--primary-black);
-    padding: 20px;
-    display:flex;
+nav {
+    background-color: var(--secondary-black);
+    display: flex;
     flex-direction: row;
-    border-bottom: 2px solid var(--secondary-black);
-    gap: 5rem;
+    justify-content: space-between;
+    max-height: 50px;
     place-items: center;
-    place-content: space-between;
-    overflow: hidden;
-    position: fixed;
+    gap: 2rem;
+    padding: 20px;
+    border-bottom: 1px solid var(--secondary-black);
 }
 
-.logo{
+
+.logo {
+    /* border: 1px solid; */
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--accent-yellow);
@@ -57,14 +53,14 @@ body{
     animation: glow 2s infinite ease-in-out alternate;
 }
 
-.nav-links{
-    /* border: 1px white solid; */
-    /* flex: 1; */
-    width: 50vw;
-    justify-content: center;
+.nav-links {
+    flex: 1;
     display: flex;
-    gap: 1.5rem;
-    /* font-size: 20px; */
+    gap: 4rem;
+    place-content: end;
+    place-items: center;
+    /* border: 1px solid; */
+    height: 50px;
 }
 
 .nav-links a {
@@ -90,6 +86,7 @@ body{
     transition: all .3s;
 }
 
+
 .nav-links a:hover{
     color: var(--accent-yellow);
 }
@@ -105,21 +102,13 @@ body{
     gap: 7px;
     flex-direction: column;
     cursor: pointer;
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 
 .bar {
     display: none;
     width: 25px;
     height: 3px;
-    background-color: var(--text-white);
+    background-color: var(--bright-yellow);
     border-radius: 10px;
-}
-
-section{
-    /* width: 100vw; */
-    height: 100vh;
-    padding: 30px;
-    overflow: hidden;
-    border: 2px solid;
 }
