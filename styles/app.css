@@ -49,7 +49,6 @@ nav {
 
 .logo {
     /* border: 1px solid; */
-    flex: 3;
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--accent-yellow);
@@ -58,11 +57,11 @@ nav {
 }
 
 .nav-links {
-    flex: 2;
+    flex: 1;
     display: flex;
-    /* gap: 4rem; */
+    gap: 4rem;
     place-content: end;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     place-items: center;
     /* border: 1px solid; */
     height: 50px;
