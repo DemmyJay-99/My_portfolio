@@ -12,9 +12,6 @@
 
 
 @media (max-width: 768px) {
-    html{
-        overflow-x: hidden;
-    }
      .nav-links{
         all: unset;
         display: none;
@@ -22,10 +19,10 @@
         place-items: start;
         flex-direction: column;
         gap: 2rem;
-        top: 70px;
+        top: 50px;
         left: 0;
         width: 100vw;
-        max-height: 100vh;
+        min-height: 30vh;
         padding-top: 30px;
         padding: 40px;
         box-sizing: border-box;
@@ -34,7 +31,7 @@
         background-color:var(--primary-black);
         animation: fall 0.8s ease-out both alternate;
         a{
-            font-size: 2rem;
+            font-size: 1.7rem;
         }
         a::before{
             content: "";
