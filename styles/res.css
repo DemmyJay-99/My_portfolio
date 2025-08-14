@@ -10,8 +10,7 @@
     --gradient-accent: linear-gradient(135deg, var(--accent-yellow) 0%, var(--bright-yellow) 100%);
 }
 
-
-@media (max-width: 768px) {
+@media (max-width: 769px) {
      .nav-links{
         all: unset;
         display: none;
@@ -51,5 +50,13 @@
     }
     .bar{
         display: block;
+    }
+    .intro{
+        flex-direction: column-reverse;
+        margin-top: 90px;
+        padding: 0;
+    }
+    .intro-left {
+        max-width: 300px;
     }
 }
