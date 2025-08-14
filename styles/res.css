@@ -22,12 +22,15 @@
         left: 0;
         width: 100vw;
         min-height: 30vh;
-        padding-top: 30px;
+        /* height: 80vh; */
+        padding-top: 700px;
         padding: 40px;
         box-sizing: border-box;
+        margin-top: 40px;
         overflow: hidden;
         position: fixed;
-        background-color:var(--primary-black);
+        z-index: 10000000;
+        background-color: rgba(101, 23, 23, 0.7);
         animation: fall 0.8s ease-out both alternate;
         a{
             font-size: 1.7rem;
