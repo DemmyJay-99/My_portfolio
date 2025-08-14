@@ -56,7 +56,7 @@
     }
     .intro{
         flex-direction: column-reverse;
-        margin-top: 70px;
+        margin-top: 0px;
         padding: 80px 20px;
         justify-content: center;
         h1{
