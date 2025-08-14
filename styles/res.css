@@ -53,10 +53,16 @@
     }
     .intro{
         flex-direction: column-reverse;
-        margin-top: 90px;
-        padding: 0;
+        margin-top: 70px;
+        padding: 20px 20px;
+        justify-content: center;
+        h1{
+            margin-top: 20px;
+            text-align: center;
+        }
+        h3{
+            font-size: 2rem;
+        }
     }
-    .intro-left {
-        max-width: 300px;
-    }
+
 }
