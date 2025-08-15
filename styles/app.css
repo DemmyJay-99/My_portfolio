@@ -8,6 +8,9 @@
     --text-gray: #cccccc;
     --gradient-primary: linear-gradient(135deg, var(--primary-black) 0%, var(--secondary-black) 100%);
     --gradient-accent: linear-gradient(135deg, var(--accent-yellow) 0%, var(--bright-yellow) 100%);
+    --navbar-bg: rgba(10,10,10,0.85);
+    --navbar-blur: blur(10px);
+    --intro-bg: rgba(26,26,26,0.95);
     --color-bg-primary: #0A0A0A;     /* Deep black */
     --color-bg-secondary: #1A1A1A;   /* Dark charcoal */
     --color-bg-tertiary: #2A2A2A;    /* Medium charcoal */
@@ -50,7 +53,10 @@ nav {
     width: 100vw;
     position: fixed;
     top: 0;
-    background-color: rgba(101, 23, 23, 0.7);
+    left: 0;
+    background: var(--navbar-bg);
+    backdrop-filter: var(--navbar-blur);
+    -webkit-backdrop-filter: var(--navbar-blur);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -60,7 +66,7 @@ nav {
     /* gap: 20rem; */
     padding: 40px;
     border-bottom: 1px solid var(--secondary-black);
-    backdrop-filter: blur(10px);
+    z-index: 1000;
 }
 
 
@@ -149,9 +155,10 @@ section{
     flex-wrap: wrap;
     min-height: 100vh;
     margin-top: 30px;
-    background-color: var(--color-bg-card);
+    background: var(--intro-bg);
     width: 100%;
     border-bottom: 1px solid var(--primary-black);
+    color: var(--text-white);
 }
 
 .intro button{
