@@ -297,11 +297,12 @@ section{
 
 .job{
     background: var(--gradient-card);
-    width: 500px;
-    height: 300px;
+    width: 550px;
+    height: 350px;
     border: 2px solid transparent;
     border-radius: 10px;
-    padding: 1.2rem;
+    padding: 1.8rem;
+    padding-top: 3rem;
     display: flex;
     gap: 2rem;
     flex-direction: column;
@@ -320,11 +321,12 @@ section{
 
 .journey {
     background: var(--gradient-card);
-    width: 500px;
-    height: 300px;
+    width: 550px;
+    height: 350px;
     border: 2px solid transparent;
     border-radius: 10px;
-    padding: 1.2rem;
+    padding: 1.8rem;
+    padding-top: 3rem;
     display: flex;
     gap: 2rem;
     flex-direction: column;
@@ -336,7 +338,7 @@ section{
         color: #ffd700;
     }
     p{
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         color: var(--text-gray);
     }
 }
