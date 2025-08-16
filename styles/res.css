@@ -94,16 +94,19 @@
         min-height: 100vh;
         max-height: 200%;
         gap: 2rem;
+        padding: 10px;
     }
     .me{
         font-size: 1rem;
         max-width: 100%;
+        width: 100vw;
     }
     .journey, .job{
         max-width: 100%;
+        width: 100vh;
         height: 350px;
         /* font-size: 1rem; */
-        padding: 20px 10px;
+        padding: 20px 20px;
         h2{
             font-size:1.4rem;
         }
@@ -111,9 +114,15 @@
             font-size: 1.1rem;
         }
     }
-    /* .stat{
-        width: 330px;
-    } */
+    .stats{
+        width: 100vw;
+        place-content: center;
+        place-items: center;
+        box-sizing: border-box;
+        .stat{
+            width: 90vw;
+        }
+    }
 }
 
 @media (width: 768px) {
