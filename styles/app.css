@@ -298,13 +298,14 @@ section{
 .me{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     max-width: 400px;
     gap: 3rem;
 }
 
 .job{
     background: var(--gradient-card);
-    width: 550px;
+    max-width: 550px;
     height: 350px;
     border: 2px solid transparent;
     border-radius: 10px;
