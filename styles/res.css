@@ -76,6 +76,11 @@
     .intro-right{
         background-color: --var(color-bg-primary);
         border:none;
+        transition: none;
+        &:hover{
+            background-color: --var(color-bg-primary);
+            border: none;
+        }
     }
     .about{
         width: 100%;
