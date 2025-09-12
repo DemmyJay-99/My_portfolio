@@ -44,6 +44,17 @@ html{
     overflow-x: hidden;
 }
 
+.fade{
+    opacity: 0;
+    transform: translateY(120px);
+    transition: .3s;
+}
+
+.fade.is-visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+
 body{
     height: 100vh;
     color: var(--text-white);
@@ -292,7 +303,14 @@ section{
         display: flex;
         place-content: center;
         place-items: center;
+        transform: translateY(120px);
+        transition: .5s;
+        opacity: 0;
     }
+    .head.is-visible{
+    opacity: 1;
+    transform: translateY(0);
+}
     .about-text{
         font-size: 1.5rem;
         font-weight: 100;
