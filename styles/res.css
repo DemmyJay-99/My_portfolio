@@ -124,6 +124,9 @@
             font-size: 1.1rem;
         }
     }
+    .mini-skills{
+        margin-bottom: 30px;
+    }
     .stats{
         width: 100vw;
         place-content: center;
