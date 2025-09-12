@@ -1,4 +1,5 @@
 const hamburger = document.getElementById('hamburger');
+const navBar = document.querySelector('.nav-bar');
 const nav = document.getElementById('nav-links');
 const body = document.querySelector('body');
 let lastScrollTop = 0;
@@ -20,3 +21,11 @@ hamburger.addEventListener('click', () => {
         
 //         lastScrollTop = scrollTop;
 //     }
+
+window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                navBar.classList.add('scrolled');
+            } else {
+                navBar.classList.remove('scrolled');
+            }
+});
