@@ -210,6 +210,7 @@ section{
 
 .intro-left {
     max-width: 600px;
+    animation: slide-left 1s ease;
 }
 
 .intro-left h1{
@@ -253,6 +254,7 @@ section{
     background: var(--color-bg-card);
     transition: .3s;
     cursor: pointer;
+    animation: slide-right 1s ease-out;
     .code{
         border: 1px solid;
         border-radius: 50%;
