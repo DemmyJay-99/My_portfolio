@@ -6,8 +6,14 @@ let lastScrollTop = 0;
 
 hamburger.addEventListener('click', () => {
     const isOpen = nav.classList.toggle('show');
-    body.style.overflowY = isOpen ? 'hidden' : 'auto';
+    // nav.style.overflowY = isOpen ? 'hidden' : 'auto';
 });
+
+document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('show');
+            });
+        });
 
 // handleScroll() {
 //         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;

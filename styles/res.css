@@ -27,11 +27,11 @@
         padding-top: 700px;
         padding: 40px;
         box-sizing: border-box;
-        margin-top: 40px;
+        margin-top: 30px;
         overflow: hidden;
         position: fixed;
         z-index: 10000000;
-        background-color: rgba(101, 23, 23, 0.7);
+        background-color: rgba(101, 23, 23, 1);
         animation: fall 0.8s ease-out both alternate;
         a{
             font-size: 1.7rem;
@@ -40,8 +40,11 @@
             content: "";
             position: absolute;
             background-color: #b8860b;
-            width: 100%;
+            width: 0%;
             top: 40px;
+        }
+        a.active::before{
+            width: 100%;
         }
     }
     .nav-links.show{
