@@ -30,7 +30,7 @@
         margin-top: 30px;
         overflow: hidden;
         position: fixed;
-        z-index: 10000000;
+        z-index: 10000;
         background-color: rgba(101, 23, 23, 1);
         animation: fall 0.8s ease-out both alternate;
         a{
@@ -77,9 +77,13 @@
         }
     }
     .intro-right{
-        background-color: --var(color-bg-primary);
+        /* background-color: --var(color-bg-primary); */
         border:none;
+        border-radius: 50%;
         transition: none;
+        width: 250px;
+        height: 250px;
+        cursor: none;
         &:hover{
             background-color: --var(color-bg-primary);
             border: none;
@@ -142,6 +146,11 @@
         box-sizing: border-box;
         .stat{
             width: 90vw;
+        }
+    }
+    .skills{
+        .skill-title{
+            font-size: 2.2rem;
         }
     }
 }

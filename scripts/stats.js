@@ -28,12 +28,7 @@ if (about) {
           updateCount(stat);
         });
         activated = true;
-      } 
-      // remove this block if you don’t want reset
-      // else if (!entry.isIntersecting && activated) {
-      //   stats.forEach(stat => stat.innerText = 0);
-      //   activated = false;
-      // }
+      }
     });
   }, { threshold: 0.1 });
 
