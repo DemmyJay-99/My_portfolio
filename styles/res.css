@@ -59,7 +59,7 @@
         display: block;
     }
     section{
-        padding: 0;
+        padding: 10px;
         /* min-height: 150vh; */
     }
     .intro{
@@ -152,7 +152,32 @@
         .skill-title{
             font-size: 2.2rem;
         }
+        .skill-text{
+            font-size: 1rem;
+            text-align: center;
+            width: 90%;
+        }
     }
+    .skill-wrapper{
+        /* grid-template-columns: 1fr; */
+        width: 100%;
+        padding: .5rem;
+    }
+     .section-subtitle{
+            font-size: 1rem;
+            text-align: center;
+            width: 90%;
+        }
+    .project-section{
+        display: none;
+    }
+     .contact-title{
+            font-size: 2.2rem;
+    }
+    .mini-skills{
+        display: none;
+    }
+    
 }
 
 @media (width: 768px) {
