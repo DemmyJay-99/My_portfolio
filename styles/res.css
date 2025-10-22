@@ -82,11 +82,17 @@
         border-radius: 50%;
         transition: none;
         width: 250px;
-        height: 250px;
+        height: 150px;
         cursor: none;
-        &:hover{
-            background-color: --var(color-bg-primary);
+        margin-bottom: 50px;
+        .code{
             border: none;
+        }
+        img{
+            margin-top: 200px;
+            margin-bottom: 150px;
+            width: 200px;
+            height: 200px;
         }
     }
     .about{
