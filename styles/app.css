@@ -273,27 +273,27 @@ section{
     place-items: center;
     width: 350px;
     height: 350px;
-    border: 1px solid;
+    /* border: 1px solid; */
     border-radius: 15%;
-    background: var(--color-bg-card);
+    /* background: var(--color-bg-card); */
     transition: .3s;
     cursor: pointer;
     animation: slide-right 1s ease-out;
     .code{
         border: 1px solid;
         border-radius: 50%;
-        width: 250px;
-        height: 250px;
+        width: 350px;
+        height: 350px;
         display: flex;
         place-content: center;
         place-items: center;
     }
-    i{
+    img{
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
         font-size: 3rem;
         color: var(--accent-yellow);
-    }
-    &:hover{
-        background-color: var(--color-border-light);
     }
 }
 
@@ -837,6 +837,7 @@ form input, textarea{
     color: var(--text-gray);
     font-size: 1.0rem;
     background-color: var(--color-bg-primary);
+    caret-color: var(--accent-yellow);
 }
 
 input:focus-within, textarea:focus-within{
