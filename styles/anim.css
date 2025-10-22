@@ -6,7 +6,7 @@
         text-shadow: 0 0 10px var(--accent-yellow), 0 0 30px var(--accent-yellow);
     }
 }
-
+/* 
 @keyframes slide-right {
     0%{
         transform: translateX(500px);
@@ -32,4 +32,4 @@
         transform: translateX(0);
         opacity: 1;
     }
-}
+} */
