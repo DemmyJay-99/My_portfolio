@@ -11,7 +11,12 @@
     --gradient-accent: linear-gradient(135deg, var(--accent-yellow) 0%, var(--bright-yellow) 100%);
 }
 
+
+
 @media (max-width: 769px) {
+    .buttons{
+    font-weight: 900;
+    }
      .nav-links{
         all: unset;
         display: none;
