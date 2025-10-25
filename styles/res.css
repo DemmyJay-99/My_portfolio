@@ -189,7 +189,16 @@
     .mini-skills{
         display: none;
     }
-    
+    .contact .tables{
+        /* max-height: 500px; */
+        padding: .9rem;
+        padding-top: 1rem;
+        /* background-color: var(--accent-yellow); */
+    }
+    form{
+        gap: 0rem;
+        margin-top: 0;
+    }
 }
 
 @media (width: 768px) {
