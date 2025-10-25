@@ -64,6 +64,8 @@ body{
     height: 100vh;
     color: var(--text-white);
     background: var(--color-bg-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
 }
 
 nav {

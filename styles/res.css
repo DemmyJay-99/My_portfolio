@@ -194,6 +194,9 @@
         padding: .9rem;
         padding-top: 1rem;
         /* background-color: var(--accent-yellow); */
+        h1{
+            font-size: 2rem;
+        }
     }
     form{
         gap: 0rem;
