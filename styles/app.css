@@ -498,6 +498,7 @@ section{
         font-size: 0.9rem;
         border: 1px solid var(--accent-yellow);
         transition: all 0.3s ease;
+        cursor: pointer;
         &:hover{
             background-color: var(--accent-yellow);
             color: var(--color-bg-primary);
@@ -650,6 +651,7 @@ section{
         background-color: rgba(255, 215, 0, 0.05);
         transition: all .3s;
         border-left: 3px solid transparent;
+        cursor: pointer;
         &:hover{
                 transform: translateX(5px);
                 background-color: rgba(255, 215, 0, 0.15);
@@ -658,6 +660,7 @@ section{
             }
         .skill-item{
                 font-size: 1rem;
+                cursor: pointer;
         }
         .skill-percentage{
                 font-size: 1rem;
