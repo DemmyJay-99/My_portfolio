@@ -64,6 +64,7 @@ body{
     height: 100vh;
     color: var(--text-white);
     background: var(--color-bg-primary);
+    font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; 
 }
