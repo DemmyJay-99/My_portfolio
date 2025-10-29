@@ -207,6 +207,9 @@
             margin-top: 10px;
         }
     }
+    .contact .table-left{
+        padding-bottom: 30px;
+    }
     form{
         gap: 0rem;
         margin-top: 0;
