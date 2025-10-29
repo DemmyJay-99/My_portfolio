@@ -6,6 +6,7 @@ let lastScrollTop = 0;
 
 hamburger.addEventListener('click', () => {
     const isOpen = nav.classList.toggle('show');
+    hamburger.classList.toggle("active");
     // nav.style.overflowY = isOpen ? 'hidden' : 'auto';
 });
 

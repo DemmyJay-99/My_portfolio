@@ -157,6 +157,7 @@ nav.scrolled{
     gap: 7px;
     flex-direction: column;
     cursor: pointer;
+    display: inline-block;
     /* border: 1px solid; */
 }
 
@@ -166,6 +167,22 @@ nav.scrolled{
     height: 3px;
     background-color: var(--accent-yellow);
     border-radius: 10px;
+    transition: .3s;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: rotate(45deg) translateY(20px);
+  width: 45px;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  /* transform: rotate(-45deg); */
+   transform: rotate(-45deg) translateY(-20px);
+  width: 45px;
 }
 
 section{
