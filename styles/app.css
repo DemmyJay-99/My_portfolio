@@ -11,20 +11,19 @@
     --navbar-bg: rgba(10,10,10,0.85);
     --navbar-blur: blur(10px);
     --intro-bg: rgba(26,26,26,0.95);
-    --color-bg-primary: #0A0A0A;     /* Deep black */
-    --color-bg-secondary: #1A1A1A;   /* Dark charcoal */
+    --color-bg-primary: #0A0A0A;    
+    --color-bg-secondary: #1A1A1A;   
     --color-bg-secondary-transparent: rgba(26, 26, 26, 0.9);
-    --color-bg-tertiary: #2A2A2A;    /* Medium charcoal */
-    --color-bg-card: #1F1F1F;        /* Card background */
-    /* Shadows */
+    --color-bg-tertiary: #2A2A2A;  
+    --color-bg-card: #1F1F1F;        
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
     --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
     --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5);
     --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.6);
     --shadow-glow: 0 0 20px rgba(244, 228, 166, 0.3);
     --shadow-glow-strong: 0 0 40px rgba(244, 228, 166, 0.5);
-    --color-border: #333333;         /* Border color */
-    --color-border-light: #404040;   /* Light border */
+    --color-border: #333333;        
+    --color-border-light: #404040;  
     --gradient-card: linear-gradient(145deg, var(--color-bg-card) 0%, var(--color-bg-secondary) 100%);
 }
 
@@ -467,7 +466,7 @@ section{
     box-shadow: var(--shadow-lg);
     transition: all .3s;
     h2{
-        font-size: 2.3rem;
+        font-size: 2.0rem;
         letter-spacing: 2px;
         color: #ffd700;
     }
@@ -491,7 +490,7 @@ section{
     box-shadow: var(--shadow-lg);
     transition: all .3s;
     h2{
-        font-size: 2.3rem;
+        font-size: 2rem;
         letter-spacing: 2px;
         color: #ffd700;
     }
@@ -996,9 +995,11 @@ input:focus-within, textarea:focus-within{
     background-color: #b7f05a;
     border-radius: 50%;
     position: fixed;
-    /* z-index: 8; */
-    opacity: .3;
+    /* z-index: -8; */
+    opacity: .2;
     box-shadow: 0 0 4px #b7f05a;
+    animation: pulse 2s infinite ease-in-out alternate;
+    animation: float 15s infinite ease-in-out;
 }
 .big{
     width: 400px;

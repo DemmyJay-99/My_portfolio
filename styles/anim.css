@@ -6,6 +6,29 @@
         text-shadow: 0 0 10px var(--accent-yellow), 0 0 30px var(--accent-yellow);
     }
 }
+
+@keyframes pulse {
+    from{
+        transform: scale(1.1);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+@keyframes float {
+            0%, 100% {
+                transform: translateY(0) translateX(0) scale(1);
+            }
+            25% {
+                transform: translateY(-20px) translateX(20px) scale(1.05);
+            }
+            50% {
+                transform: translateY(0) translateX(40px) scale(1);
+            }
+            75% {
+                transform: translateY(20px) translateX(20px) scale(1.05);
+            }
+        }
 /* 
 @keyframes slide-right {
     0%{
