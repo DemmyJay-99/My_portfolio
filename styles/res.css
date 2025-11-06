@@ -195,20 +195,30 @@
     .mini-skills{
         display: none;
     }
-    .contact .tables{
+    .contact{
+        padding: 5px;
+    }
+    .contact-tables{
         /* max-height: 500px; */
         padding: .9rem;
-        padding-top: 1rem;
+        /* padding-top: 1rem; */
+        flex-wrap: wrap;
+        gap: rem;
+        justify-content: center;
         /* background-color: var(--accent-yellow); */
-        h1{
+        h2{
             font-size: 1.5rem;
-            position: relative;
-            right: -10px;
+            /* position: relative;
+            right: -10px; */
             margin-top: 10px;
         }
     }
-    .contact .table-left{
-        padding-bottom: 30px;
+    .table{
+        padding: 1rem;
+        z-index: 1;
+    }
+    .contact-text{
+        font-size: .5rem;
     }
     form{
         gap: 0rem;
