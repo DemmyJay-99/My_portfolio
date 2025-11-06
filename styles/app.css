@@ -260,7 +260,7 @@ section{
 .intro .project{
     background-color: transparent;
     border: 2px solid yellow;
-    color: var(--text-white);
+    color: #ccc;
 }
 
 .intro .project:hover{
