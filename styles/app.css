@@ -917,6 +917,7 @@ form{
     box-shadow: 0 0 4px #b7f05a;
     animation: pulse 2s infinite ease-in-out alternate;
     animation: float 15s infinite ease-in-out;
+    overflow: hidden;
 }
 .big{
     width: 400px;
