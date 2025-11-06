@@ -220,6 +220,9 @@
     .contact-text{
         font-size: .5rem;
     }
+    .contact input, textarea{
+        margin: 10px;
+    }
     form{
         gap: 0rem;
         margin-top: 0;
