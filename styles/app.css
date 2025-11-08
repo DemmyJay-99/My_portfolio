@@ -45,7 +45,7 @@ html{
 
 ::selection{
     color: #0A0A0A;
-    background-color: #F4E4A6;
+    background-color: #5e5945;
 }
 
 .fade{
@@ -198,6 +198,14 @@ section{
         color: var(--text-gray);
 }
 
+footer{
+    display: flex;
+    place-items: center;
+    min-height: 100px;
+    background-color: var(--color-bg-primary);
+    padding: 1rem;
+    gap: 3rem;
+}
 
 .intro{
     display: flex;
@@ -836,7 +844,7 @@ form{
         background-color: var(--primary-black);
         caret-color: #FFD700;
         &:focus{
-            border: 1px solid var(--primary-yellow);
+            border: 1px solid var(--bright-yellow);
         }
     }
     textarea{
@@ -848,9 +856,9 @@ form{
         padding: 1rem;
         margin-bottom: 20px;
         background-color: var(--primary-black);
-        caret-color: var(--primary-yellow);
+        caret-color: var(--bright-yellow);
         &:focus{
-            border: 1px solid var(--primary-yellow);
+            border: 1px solid var(--bright-yellow);
         }
     }
     }
