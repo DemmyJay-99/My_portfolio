@@ -236,123 +236,6 @@
             </div>
         </div>
     </section>
-    <section id="projects" class="project-section">
-        <div class="head">
-            <h1>My Projects</h1>
-        </div>
-    </section>
-    <!-- <section id="contact" class="contact">
-        <div class="head">
-            <h1 class="contact-title">Get in Touch</h1>
-        </div>
-        <p class="section-subtitle">Let's work together to bring your ideas to life</p>
-
-        <div class="contact-container">
-            <div class="contact-wrapper">
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fa-solid fa-envelope"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h3 class="details-title">E-mail</h3>
-                        <p class="details-text">demmyjyd@gmail.com</p>
-                    </div>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fa-solid fa-envelope"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h3 class="details-title">E-mail</h3>
-                        <p class="details-text">demmyjyd@gmail.com</p>
-                    </div>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fa-solid fa-envelope"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h3 class="details-title">E-mail</h3>
-                        <p class="details-text">demmyjyd@gmail.com</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-<!-- <section id="contact" class="contact">
-  <div class="head">
-    <h1 class="contact-title">Get In Touch</h1>
-  </div>
-        <p class="section-subtitle">Let's work together to bring your ideas to life</p>
-    <div class="table">
-      <div class="table-left tables fade">
-        <h1>Contact Information</h1>
-        <div class="info">
-          <i class="fa-solid fa-envelope"></i>
-          <div class="info-right">
-            <p>E-mail</p>
-            <h3><a href="mailto:demmyjyd@gmai.com">demmyjyd@gmail.com</a></h3>
-          </div>
-        </div>
-        <div class="info">
-          <i class="fa-solid fa-phone"></i>
-          <div class="info-right">
-            <p>Whatsapp</p>
-            <h3><a href="https://wa.me/2348105202390">+234 81 050 2390</a></h3>
-          </div>
-        </div>
-        <div class="info">
-          <i class="fa-solid fa-location-pin"></i>
-          <div class="info-right">
-            <p>Location</p>
-            <h3>Akure, Ondo State</h3>
-          </div>
-        </div>
-          <div class="link-section">
-            <h3>Find me on</h3>
-            <div class="links">
-              <a href="https://github.com/DemmyJay-99">
-                <i class="fa-brands fa-github"></i>
-              </a>
-              <a href="https://x.com/joyboy2357">
-                <i class="fa-brands fa-twitter"></i>
-              </a>
-              <a href="https://wa.me/2348105202390">
-                <i class="fa-brands fa-whatsapp"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/olajide-adesina-606541319/">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-            </div>
-          </div>
-      </div>
-      <div class="table-right tables fade">
-        <h1>Send me a message</h1>
-        <form id="form">
-          <label>Your Name</label>
-          <input type="text" placeholder="John Doe" id="name" required>
-
-          <label>Your E-mail</label>
-          <input type="text" placeholder="example@gmail.com" id="email" required>
-          
-          <label>Subject</label>
-          <input type="text" placeholder="Project Inquiry" id="subject" required>  
-
-          <label>Message</label>
-          <textarea class="message" rows="3" placeholder="Your message here" id="message" required></textarea>      
-          <button type="button" class="message-btn" id="btn" onclick="sendEmail()">
-            <span id="span">Send a message
-            <i class="fa-solid fa-paper-plane"></i>
-            </span>
-            <div class="container" id="container">
-              <div class="item"></div>
-            </div>
-          </button> 
-        </form>
-      </div>
-    </div>
-</section> -->
     <section class="contact">
         <div class="title">
         <h1>Get in Touch</h1>
@@ -367,7 +250,7 @@
                 Feel free to reach out to me through any of the following channels. I typically respond within 24 hours during business days.
             </p>
             <div class="contact-details">
-                <div class="item">
+                <div class="item slide">
                     <p><i class="fa-solid fa-envelope"></i></p>
                     <div class="item-content">
                         <span class="email-p">E-mail</span>
@@ -375,7 +258,7 @@
                         <span>demmyjyd@gmail.com</span>
                     </div>
                 </div>
-                <div class="item">
+                <div class="item slide">
                     <p><i class="fa-solid fa-phone"></i></p>
                     <div class="item-content">
                         <span class="email-p">Phone</span>
@@ -383,7 +266,7 @@
                         <span>+234 81 052 02390</span>
                     </div>
                 </div>
-                <div class="item">
+                <div class="item slide">
                     <p><i class="fa-solid fa-location-dot"></i></p>
                     <div class="item-content">
                         <span class="email-p">Location</span>
@@ -414,23 +297,47 @@
             <h2>Send a message</h2>
             <form>
                 <label>Your Name</label>
-                <input type="text" placeholder="John Doe">
-                <label>Your E-mail</label>
-                <input type="email" placeholder="example@gmail.com">
-                <label>Subject</label>
-                <input type="text" placeholder="Subject">
-                <label>Message</label>
-                <textarea placeholder="Message"></textarea>
-                <button class="message-btn">
+                <input type="text" placeholder="John Doe" class="fade">
+                <label class="fade">Your E-mail</label>
+                <input type="email" placeholder="example@gmail.com" class="fade">
+                <label class="fade">Subject</label>
+                <input type="text" placeholder="Subject" class="fade">
+                <label class="fade">Message</label>
+                <textarea placeholder="Message" class="fade"></textarea>
+                <button class="message-btn fade">
                     Send Message 
                     <i class="fa-solid fa-paper-plane"></i></button>
             </form>
         </div>
     </div>
     </section>
+<footer>
+  <div class="footer-name">
+    <span class="footer-brackets">&lt;/&gt;</span>
+    <div class="mellow">
+    <span class="footer-mel">MeL</span>
+    <span class="footer-low">Low</span>
+    </div>
+  </div>
+  <div class="footer-links">
+    <a href="https://github.com/DemmyJay-99">
+      <i class="fa-brands fa-github"></i>
+    </a>
+    <a href="https://x.com/joyboy2357">
+      <i class="fa-brands fa-twitter"></i>
+    </a>
+    <a href="https://wa.me/2348105202390">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/olajide-adesina-606541319/">
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+    </div>
+</footer>
     <script src="scripts/header.js"></script>
     <script src="scripts/stats.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/scroll.js"></script>
+    <script src="scripts/date.js"></script>
 </body>
 </html>
