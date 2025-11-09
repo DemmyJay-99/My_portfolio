@@ -1,6 +1,7 @@
 const headings = document.querySelectorAll(".head");
 const journey = document.querySelector(".job");
 const fade = document.querySelectorAll(".fade");
+const slide = document.querySelectorAll(".slide");
 
 
 
@@ -19,6 +20,9 @@ headings.forEach(heading => {
 });
 fade.forEach(fade => {
     observer.observe(fade);
+});
+slide.forEach(slide => {
+    observer.observe(slide);
 });
 
 

@@ -59,6 +59,17 @@ html{
     transform: translateY(0);
 }
 
+.slide{
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all .5s ease;
+}
+
+.slide.is-visible{
+    opacity: 1;
+    transform: translateX(0);
+}
+
 body{
     height: 100vh;
     color: var(--text-white);
