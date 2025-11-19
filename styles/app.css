@@ -182,18 +182,18 @@ nav.scrolled{
 }
 
 .hamburger.active .bar:nth-child(1) {
-  transform: rotate(45deg) translateY(20px);
-  width: 45px;
+    transform: rotate(45deg) translateY(20px);
+    width: 45px;
 }
 
 .hamburger.active .bar:nth-child(2) {
-  opacity: 0;
+    opacity: 0;
 }
 
 .hamburger.active .bar:nth-child(3) {
-  /* transform: rotate(-45deg); */
-   transform: rotate(-45deg) translateY(-20px);
-  width: 45px;
+    /* transform: rotate(-45deg); */
+    transform: rotate(-45deg) translateY(-20px);
+    width: 45px;
 }
 
 section{
@@ -204,9 +204,9 @@ section{
 }
 
 .section-subtitle{
-        font-size: 1.5rem;
-        font-weight: 100;
-        color: var(--text-gray);
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: var(--text-gray);
 }
 
 footer{
