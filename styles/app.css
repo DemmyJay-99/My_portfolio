@@ -167,7 +167,7 @@ nav.scrolled{
     place-items: center;
     gap: 7px;
     flex-direction: column;
-    cursor: pointer;
+    /* cursor: pointer; */
     display: inline-block;
     /* border: 1px solid; */
 }
@@ -179,11 +179,15 @@ nav.scrolled{
     background-color: var(--accent-yellow);
     border-radius: 10px;
     transition: .3s;
+    position: relative;
 }
 
 .hamburger.active .bar:nth-child(1) {
     transform: rotate(45deg) translateY(20px);
-    width: 45px;
+    width: 35px;
+    margin-left: 13px;
+    left: 10px;
+    /* bottom: -10px; */
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -192,8 +196,11 @@ nav.scrolled{
 
 .hamburger.active .bar:nth-child(3) {
     /* transform: rotate(-45deg); */
-    transform: rotate(-45deg) translateY(-20px);
-    width: 45px;
+    transform: rotate(-45deg) translateY(-24px);
+    width: 35px;
+    margin-left: 15px;
+    left: 15px;
+    top: 10px;
 }
 
 section{
