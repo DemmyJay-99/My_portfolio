@@ -263,9 +263,6 @@
 }
 
 @media (max-width: 380px) {
-    .balls{
-        /* display: none; */
-    }
     .intro{
         padding:80px 10px;
     }
