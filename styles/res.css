@@ -17,6 +17,14 @@
     .buttons{
     font-weight: 900;
     }
+    .balls{
+        width: 100px;
+        height: 100px;
+        /* animation: none; */
+    }
+    .small{
+        right: 40px;
+    }
     .intro-btn{
         display: flex;
         justify-content: space-around;
@@ -247,5 +255,14 @@
     }
     .stat{
         width: 90vw;
+    }
+}
+
+@media (max-width: 380px) {
+    .balls{
+        /* display: none; */
+    }
+    .intro{
+        padding:80px 10px;
     }
 }
