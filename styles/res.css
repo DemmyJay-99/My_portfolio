@@ -17,6 +17,14 @@
     .buttons{
     font-weight: 900;
     }
+    .intro-btn{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        button{
+            width: 50%;
+        }
+    }
      .nav-links{
         all: unset;
         display: none;
