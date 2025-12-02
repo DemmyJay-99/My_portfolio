@@ -167,6 +167,7 @@ nav.scrolled{
     place-items: center;
     gap: 7px;
     flex-direction: column;
+    transition: .5s;
     /* cursor: pointer; */
     display: inline-block;
     /* border: 1px solid; */

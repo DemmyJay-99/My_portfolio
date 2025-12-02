@@ -35,13 +35,12 @@
     }
      .nav-links{
         all: unset;
-        display: none;
+        display: flex;
         place-content: start;
         place-items: start;
         flex-direction: column;
         gap: 2rem;
         top: 50px;
-        left: 0;
         width: 100vw;
         min-height: 30vh;
         /* height: 80vh; */
@@ -51,7 +50,10 @@
         margin-top: 30px;
         overflow: hidden;
         position: fixed;
+        left:-200px;
+        opacity: 0;
         z-index: 10000;
+        transition: .4s ease;
         background-color: rgba(101, 23, 23, 1);
         animation: fall 0.8s ease-out both alternate;
         a{
@@ -69,7 +71,8 @@
         }
     }
     .nav-links.show{
-        display: flex;
+        left: 0;
+        opacity: 1;
     }
     .hamburger{
         display: flex;
