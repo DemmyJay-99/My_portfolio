@@ -390,11 +390,14 @@ footer{
         place-items: center;
     }
     img{
+        display: flex;
+        place-items: center;
+        place-content: center;
         border: 1px solid var(--accent-yellow);
         width: inherit;
         height: inherit;
         border-radius: inherit;
-        font-size: 3rem;
+        font-size: 1rem;
         color: var(--accent-yellow);
         transition: transform .3s;
         &:hover{
