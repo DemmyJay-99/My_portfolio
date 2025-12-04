@@ -825,8 +825,8 @@ section{
 }
 .links{
     display: flex;
-    gap: 1rem;
-    justify-content: space-around;
+    gap: 3rem;
+    justify-content: start;
     margin-top: 15px;
 }
 
