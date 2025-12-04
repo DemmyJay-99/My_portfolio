@@ -1,0 +1,31 @@
+footer{
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+    min-height: 100px;
+    background-color: var(--color-bg-primary);
+    padding: 1.5rem;
+    gap: 3rem;
+}
+
+.footer-links{
+    display: flex;
+    gap: 3rem;
+    a{
+        text-decoration: none;
+        color: yellow;
+        font-size: 1.3rem;
+    }
+}
+
+.mellow{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    font-size: 1.5rem;
+    color: yellow;
+    #date{
+        color: #ccc;
+        font-size: 1.1rem;
+    }
+}
