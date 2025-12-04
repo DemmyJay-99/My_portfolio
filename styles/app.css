@@ -699,6 +699,10 @@ section{
     }
 }
 
+.fa-angle-right{
+    transition: .5s;
+}
+
 .fa-angle-right.active{
     transform: rotate(90deg);
 }
