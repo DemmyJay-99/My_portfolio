@@ -699,6 +699,10 @@ section{
     }
 }
 
+.fa-angle-right.active{
+    transform: rotate(90deg);
+}
+
 .project-section{
     background: var(--color-bg-secondary);
 }
