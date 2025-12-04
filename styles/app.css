@@ -658,13 +658,14 @@ section{
     flex-direction: column;
     place-content: center;
     place-items: center;
+    gap: .5rem;
     height: 0;
     width: 0;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease;
     /* border: 1px solid rgba(255, 215, 0, 0.1); */
-    i, img{
+    i, img, p{
         display: none;
     }
     span{
@@ -689,9 +690,12 @@ section{
     background-color: #1A1A1A;
     /* background-color: yellow; */
     animation: fadein .2s ease-out;
-    i, img{
+    i, img, p{
        display: inline;
        font-size: 1.9rem;
+    }
+    p{
+        font-size: 1rem;
     }
     img{
         height: 40px;
