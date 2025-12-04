@@ -86,16 +86,13 @@ nav {
     top: 0;
     left: 0;
     background: none;
-    backdrop-filter: var(--navbar-blur);
-    -webkit-backdrop-filter: var(--navbar-blur);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     max-height: 70px;
     place-items: center;
-    padding-right: 30px;
     /* gap: 20rem; */
-    padding: 40px;
+    padding: 50px 60px;
     /* border-bottom: 1px solid var(--secondary-black); */
     z-index: 1000;
     transition: .3s;
