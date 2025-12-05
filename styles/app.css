@@ -690,6 +690,29 @@ section{
     /* padding:  0 10px; */
 }
 
+
+.skill-category::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 2%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 208, 0, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.skill-category:hover::before {
+    left: 100%;
+}
+
+.skill-category:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 208, 0, 0.4);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(255, 208, 0, 0.2);
+}
+
 .skill-icon{
     height: 50px;
     width: 50px;
