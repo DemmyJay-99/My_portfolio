@@ -675,19 +675,11 @@ section{
     padding:25px 5px;
     border-radius: 15px;
     transition: .3s;
-    span{
-        font-weight: 900;
-        font-size: 1.5rem;
-    }
     &:hover{
         border: 1px solid;
         border-color: rgba(255, 208, 0, 0.4);
     }
 }
-
-/* .mid{
-
-} */
 
 .category-title{
     display: flex;
@@ -783,6 +775,7 @@ section{
 
 .skill-icon{
     transition: .5s;
+    font-size: .5rem;
 }
 
 .skill-icon.active{
