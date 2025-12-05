@@ -94,7 +94,7 @@ nav {
     /* gap: 20rem; */
     padding: 50px 60px;
     /* border-bottom: 1px solid var(--secondary-black); */
-    z-index: 1000;
+    z-index: 10;
     transition: .3s;
 }
 
@@ -226,7 +226,7 @@ section{
     width: 100%;
     border-bottom: 1px solid var(--primary-black);
     color: var(--text-white);
-    /* z-index: -10; */
+    /* z-index: 30; */
 }
 
 .intro button{
@@ -325,8 +325,20 @@ section{
 .mobile-download{
     display: none;
     min-width: 100%;
+    max-height: 50px;
     margin-top: 10px;
     background-color: var(--accent-yellow);
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 1.4rem;
+    border: none;
+    text-align: center;
+    height: 50px;
+    padding: 9px;
+    cursor: pointer;
+    /* margin-top: 20px; */
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
 }
 
 .intro-left {
@@ -639,13 +651,15 @@ section{
     font-size: 1.5rem;
     min-width: 100vw;
     min-height: 70vh;
-    *{
-        cursor: pointer;
-    }
+    /* background-color: #ccc; */
 }
 
 .skill-category{
     min-width: 100%;
+    min-height: 70px;
+    cursor: pointer;
+    /* background-color: #ccc; */
+    z-index: 30;
 }
 
 .skill-card-wrapper{
@@ -701,6 +715,10 @@ section{
         height: 40px;
         width: 40px;
     }
+}
+
+.skill-category *{
+    pointer-events: auto;
 }
 
 .fa-angle-right{
@@ -898,7 +916,7 @@ form{
     position: fixed;
     bottom: 30px;
     right: 30px;
-    z-index: 1000;
+    z-index: 10;
     font-size: 20px;
     background-color: var(--accent-yellow);
     color: var(--color-bg-primary);
