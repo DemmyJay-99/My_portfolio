@@ -94,7 +94,7 @@ nav {
     /* gap: 20rem; */
     padding: 50px 60px;
     /* border-bottom: 1px solid var(--secondary-black); */
-    z-index: 10;
+    z-index: 1000000000000000000000000000000000000000000;
     transition: .3s;
 }
 
