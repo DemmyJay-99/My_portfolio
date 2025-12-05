@@ -14,6 +14,20 @@
 
 
 @media (max-width: 769px) {
+    nav {
+        pointer-events: none; /* Add this */
+    }
+    
+    .nav-links {
+        pointer-events: none; /* Add this */
+    }
+    
+    .nav-links.show {
+        left: 0;
+        opacity: 1;
+        pointer-events: auto; /* Add this */
+    }
+    
     .buttons{
     font-weight: 900;
     }
@@ -36,6 +50,7 @@
         }
     }
      .nav-links{
+        pointer-events: none;
         all: unset;
         display: flex;
         place-content: start;
@@ -54,7 +69,7 @@
         position: fixed;
         left:-200px;
         opacity: 0;
-        z-index: 10000;
+        z-index: 10000000000000000000000000000000000;
         transition: .4s ease;
         background-color: rgba(101, 23, 23, 1);
         animation: fall 0.8s ease-out both alternate;
@@ -75,11 +90,13 @@
     .nav-links.show{
         left: 0;
         opacity: 1;
+        pointer-events: auto;
     }
     .hamburger{
         display: flex;
         position: absolute;
         right: 40px;
+        pointer-events: auto; /* Add this line */
     }
     .bar{
         display: block;
@@ -95,7 +112,9 @@
         padding: 80px 20px;
         justify-content: center;
         background: transparent;
-       *{ z-index: 30;}
+        /* pointer-events: auto; */
+        /* z-index: 0; */
+       .intro-btn{ z-index: 1;}
         h1{
             margin-top: 20px;
             text-align: center;
@@ -256,6 +275,7 @@
     }
     .skill-category{
          place-self: center;
+         z-index: 1;
     }
 }
 
