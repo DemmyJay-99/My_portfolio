@@ -647,6 +647,7 @@ section{
     display: flex;
     flex-direction: column;
     place-content: space-around;
+    gap: 1.2rem;
     place-items: start;
     font-size: 1.5rem;
     min-width: 100vw;
@@ -655,11 +656,34 @@ section{
 }
 
 .skill-category{
+    display: flex;
+    flex-direction: column;
+    place-content: center;
     min-width: 100%;
     min-height: 70px;
     cursor: pointer;
-    /* background-color: #ccc; */
+    background-color: rgba(73, 14, 14, 0.72);
     z-index: 30;
+    padding: 25px;
+    border-radius: 15px;
+    span{
+        font-weight: 900;
+        font-size: 1.7rem;
+    }
+}
+
+.category-title{
+    display: flex;
+    place-items: center;
+    gap: 1.2rem;
+    img, i{
+        height: 50px;
+        width: 50px;
+        background-color: var(--accent-yellow);
+        border-radius: 6px;
+        padding: 10px;
+        color: #000;
+    }
 }
 
 .skill-card-wrapper{
