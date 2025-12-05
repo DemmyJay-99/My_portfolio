@@ -254,6 +254,9 @@
         gap: 0rem;
         margin-top: 0;
     }
+    .skill-category{
+         place-self: center;
+    }
 }
 
 @media (width: 768px) {
@@ -269,8 +272,39 @@
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 480px) {
     .intro{
         padding:80px 10px;
+    }
+    .skill-wrapper {
+        max-width: 350px;
+    }
+    .skill-category{
+        padding-right: 0;
+        max-width: 2px;
+        min-width: 80vw;
+        max-width: 90%;
+        min-height: 70px;
+        span{
+            font-size: 1rem;
+        }
+    }
+    .skill-icon{
+        width: 35px;
+        height: 35px;
+    }
+    .skill-card-wrapper{
+        place-content: start;
+        /* border: 1px solid; */
+        padding: 0;
+        .skill-card.show{
+            height: 90px;
+            width: 95px;
+            font-size: .3rem;
+            p{
+                text-align: center;
+                font-size: .7rem;
+            }
+        }
     }
 }
