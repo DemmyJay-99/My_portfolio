@@ -99,7 +99,7 @@ nav {
 }
 
 nav.scrolled{
-    max-height: 0px;
+    padding: 30px;
     backdrop-filter: var(--navbar-blur);
     -webkit-backdrop-filter: var(--navbar-blur);
 }
