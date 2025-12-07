@@ -77,6 +77,7 @@ body{
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; 
+    font-display: swap;
     z-index: 1;
 }
 
@@ -1037,4 +1038,136 @@ form{
     height: 100px;
     bottom: 50px;
     right: 0;
+}
+
+footer{
+    display: flex;
+    place-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 100px;
+    background-color: var(--color-bg-primary);
+    padding: 1.5rem;
+    gap: 3rem;
+}
+
+.footer-links{
+    display: flex;
+    gap: 3rem;
+    a{
+        text-decoration: none;
+        color: yellow;
+        font-size: 1.3rem;
+    }
+}
+
+.mellow{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    font-size: 1.5rem;
+    color: yellow;
+    #date{
+        color: #ccc;
+        font-size: 1.1rem;
+    }
+}
+
+/* loader */
+
+.container{
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0.608) 100%);  
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    place-content: center;
+    animation: move infinite .5s linear;
+    display: none;
+    border-radius: 50%;
+}
+
+@keyframes move {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.item{
+    background-color: var(--primary-yellow);
+    width: 80%;
+    height: 80%;
+}
+
+/* Animations */
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px var(--accent-yellow);
+    }
+    to {
+        text-shadow: 0 0 10px var(--accent-yellow), 0 0 30px var(--accent-yellow);
+    }
+}
+
+@keyframes pulse {
+    from{
+        transform: scale(1.1);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+@keyframes float {
+            0%, 100% {
+                transform: translateY(0) translateX(0) scale(1);
+            }
+            25% {
+                transform: translateY(-20px) translateX(20px) scale(1.05);
+            }
+            50% {
+                transform: translateY(0) translateX(40px) scale(1);
+            }
+            75% {
+                transform: translateY(20px) translateX(20px) scale(1.05);
+            }
+        }
+
+@keyframes fadein {
+    0%{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    50%{
+        opacity: .5;
+        transform: translateY(-15px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeout {
+    0%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    50%{
+        opacity: .5;
+        transform: translateY(15px);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes bounce {
+    0%, 100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
 }
