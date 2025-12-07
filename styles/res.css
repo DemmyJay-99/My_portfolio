@@ -141,9 +141,9 @@
         .code{
             border: none;
         }
-        img{
+        img, picture{
             margin-top: 200px;
-            margin-bottom: 150px;
+            margin-bottom: 550px;
             width: 200px;
             height: 200px;
         }
