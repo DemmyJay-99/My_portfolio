@@ -27,10 +27,8 @@ html {
 
 body{
      height: 100vh;
-    /* width: 100vw;  */
     color: var(--text-white);
     background: var(--gradient-primary);
-    /* overflow: hidden; */
 }
 
 .nav-bar {
@@ -58,13 +56,10 @@ body{
 }
 
 .nav-links{
-    /* border: 1px white solid; */
-    /* flex: 1; */
     width: 50vw;
     justify-content: center;
     display: flex;
     gap: 1.5rem;
-    /* font-size: 20px; */
 }
 
 .nav-links a {
@@ -73,7 +68,6 @@ body{
     color: var(--text-gray);
     will-change: color;
     transition: color .3s;
-    /* width: 60px; */
     position: relative;
 }
 
@@ -81,9 +75,6 @@ body{
     content: "";
     position: absolute;
     top: 25px;
-    /* transform: translateY(-30px); */
-    /* left: 50%; */
-    /* transform: translateX(-5px); */
     background-color: var(--dark-yellow);
     width: 0;
     height: 2px;
