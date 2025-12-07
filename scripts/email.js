@@ -75,7 +75,6 @@ emailjs.send("service_poa5gf5", "template_ven3kqr", templateParams)
             form.reset();
             hasSent = true;
         }).catch((error) => {
-            console.log(error)
             alert("Email not sent!")
         })
           .finally(() => {
