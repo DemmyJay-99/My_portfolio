@@ -8,10 +8,21 @@
     <link rel="stylesheet" href="styles/anim.css">
     <link rel="stylesheet" href="styles/res.css">
     <link rel="stylesheet" href="styles/footer.css">
-<link href='https://cdn.boxicons.com/3.0.6/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/loader.css">
+    <link href='https://cdn.boxicons.com/3.0.6/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+      emailjs.init({
+        publicKey: "UNZrkYaw4v5iQS4TA",
+      });
+    })();
+    </script>
 </head>
 <body>
     <header>
@@ -409,18 +420,22 @@
         </div>
         <div class="table-left table">
             <h2>Send a message</h2>
-            <form>
+            <form id="form">
                 <label>Your Name</label>
-                <input type="text" placeholder="John Doe" class="fade">
+                <input type="text" placeholder="John Doe" class="fade" id="name">
                 <label class="fade">Your E-mail</label>
-                <input type="email" placeholder="example@gmail.com" class="fade">
+                <input type="email" placeholder="example@gmail.com" class="fade" id="email">
                 <label class="fade">Subject</label>
-                <input type="text" placeholder="Subject" class="fade">
+                <input type="text" placeholder="Subject" class="fade" id="subject">
                 <label class="fade">Message</label>
-                <textarea placeholder="Message" class="fade"></textarea>
-                <button class="message-btn fade">
-                    Send Message 
-                    <i class="fa-solid fa-paper-plane"></i></button>
+                <textarea placeholder="Message" class="fade" id="message"></textarea>
+                <button class="message-btn fade" id="btn" onclick="sendEmail()">
+                    <span id="span">Send Message</span> 
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <div class="container" id="container">
+                        <div class="item"></div>
+                    </div>
+                </button>
             </form>
         </div>
     </div>
@@ -453,5 +468,6 @@
     <script src="scripts/scroll.js"></script>
     <script src="scripts/date.js"></script>
     <script src="scripts/skill.js"></script>
+    <script src="scripts/email.js"></script>
 </body>
 </html>
