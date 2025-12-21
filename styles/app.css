@@ -1161,20 +1161,3 @@ footer{
         transform: translateY(-10px);
     }
 }
-
-/* ----- Boxicons Brands ----- */
-@font-face {
-  font-family: "boxicons-brands";
-  font-display: swap;
-}
-
-/* ----- Font Awesome (Free 7.x) ----- */
-@font-face {
-  font-family: "Font Awesome 6 Free"; /* still used in v7 */
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Font Awesome 6 Brands"; /* still used in v7 */
-  font-display: swap;
-}
