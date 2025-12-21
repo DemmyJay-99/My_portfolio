@@ -344,7 +344,7 @@ section{
 
 .intro-left h1{
     font-weight: 600;
-    font-size: 3.3rem;
+    font-size: 3.1rem;
     margin-bottom: 2px;
     line-height: 1.12;
     color: var(--accent-yellow);
@@ -667,8 +667,8 @@ section{
     max-width: 90%;
     min-height: 70px;
     cursor: pointer;
-    /* background-color: rgba(73, 14, 14, 0.72); */
-    background-color: var(--secondary-black);
+    background-color: rgba(73, 14, 14, 0.72);
+    /* background-color: var(--secondary-black); */
     border: 1px solid rgba(255, 208, 0, 0.1);
     z-index: 30;
     padding:25px 5px;
@@ -707,7 +707,7 @@ section{
 }
 
 .skill-category:hover {
-    background: rgba(255, 255, 255, 0.05);
+    /* background: rgba(255, 255, 255, 0.05); */
     border-color: rgba(255, 208, 0, 0.4);
     transform: translateY(-5px);
     box-shadow: 0 10px 40px rgba(255, 208, 0, 0.2);
