@@ -725,6 +725,7 @@ section{
 .fa-angle-right{
     color: var(--accent-yellow);
     transition: .3s;
+    animation: angle 2s infinite ease-out;
 }
 
 .fa-angle-right.active{
@@ -1159,5 +1160,14 @@ footer{
     }
     50%{
         transform: translateY(-10px);
+    }
+}
+
+@keyframes angle {
+    0%, 100%{
+        transform: translateX(5px);
+    }
+    50%{
+        transform: translateX(-5px);
     }
 }
