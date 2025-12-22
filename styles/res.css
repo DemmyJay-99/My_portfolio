@@ -265,6 +265,9 @@
          place-self: center;
          z-index: 1;
     }
+    .category-title p{
+        display: none;
+    }
 }
 
 @media (width: 768px) {
