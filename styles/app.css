@@ -733,8 +733,8 @@ section{
 
 .fa-angle-right{
     color: var(--accent-yellow);
+    /* animation: angle 2s infinite ease-out; */
     transition: .3s;
-    animation: angle 2s infinite ease-out;
 }
 
 .fa-angle-right.active{
@@ -833,7 +833,7 @@ section{
 }
 
 .contact .contact-paragraph{
-    font-weight: 100;
+    font-weight: 300;
     color: var(--text-gray);
 }
 
