@@ -164,6 +164,7 @@ nav.scrolled{
     transition: .5s;
     /* cursor: pointer; */
     display: inline-block;
+    z-index: 1600000000000;
     /* border: 1px solid; */
 }
 

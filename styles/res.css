@@ -64,14 +64,15 @@
         padding-top: 700px;
         padding: 40px;
         box-sizing: border-box;
-        margin-top: 20px;
+        margin-top: -60px;
         overflow: hidden;
         position: fixed;
-        left:-200px;
+        left:-400px;
         opacity: 0;
-        z-index: 10000000000000000000000000000000000;
+        z-index: 1000000000;
         transition: .4s ease;
-        background-color: rgb(50, 5, 5);
+        background-color: rgb(53, 13, 13);
+        /* backdrop-filter: blur(50px); */
         animation: fall 0.8s ease-out both alternate;
         a{
             font-size: 1.7rem;
@@ -89,7 +90,7 @@
     }
     .nav-links.show{
         left: 0;
-        opacity: 1;
+        opacity: .9;
         pointer-events: auto;
     }
     .hamburger{
