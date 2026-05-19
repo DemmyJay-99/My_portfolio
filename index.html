@@ -1,445 +1,498 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:title" content="Mellow's portfolio" />
     <meta property="og:description" content="This is a portfolio showcasinng my skills and projects" />
     <meta property="og:image" content="assets/pfp.avif" />
     <meta property="og:url" content="https://my-portfolio-eight-lemon-32.vercel.app/" />
     <meta property="og:type" content="website" />
     <title>My Portfolio</title>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-    <link rel="preconnect" href="https://cdn.boxicons.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.boxicons.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/webfonts/fa-solid-900.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <link rel="preload" as="image" href="assets/pfp.jpg" />
     <link rel="preload" as="image" href="assets/pfp.webp" />
     <link rel="preload" as="image" href="assets/pfp.avif" />
-    <link rel="preload" href="styles/app.css" as="style">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
-    <link rel="stylesheet" href="styles/app.css">
-    <link rel="stylesheet" href="styles/res.css">
-    <link href='https://cdn.boxicons.com/3.0.6/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
+    <link rel="preload" href="styles/app.css" as="style" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="styles/app.css" />
+    <link rel="stylesheet" href="styles/res.css" />
+    <link href="https://cdn.boxicons.com/3.0.6/fonts/brands/boxicons-brands.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
-    (function(){
-      emailjs.init({
-        publicKey: "UNZrkYaw4v5iQS4TA",
-      });
-    })();
+      (function () {
+        emailjs.init({
+          publicKey: "UNZrkYaw4v5iQS4TA",
+        });
+      })();
     </script>
     <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="nav-bar">
-            <div class="logo-container">
-            <a href="#home" class="logo">
+      <nav class="nav-bar">
+        <div class="logo-container">
+          <a href="#home" class="logo">
             <h2>Mellow</h2>
-            </a>
-            </div>
-            <div class="nav-links" id="nav-links">
-                <a href="#home" class="active">Home</a>
-                <a href="#about" class="active">About</a>
-                <a href="#skills" class="active">Skills</a>
-                <a href="#projects" class="active">Projects</a>
-                <a href="#contact" class="active">Contact</a>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
-        </header>
+          </a>
+        </div>
+        <div class="nav-links" id="nav-links">
+          <a href="#home" class="active">Home</a>
+          <a href="#about" class="active">About</a>
+          <a href="#skills" class="active">Skills</a>
+          <a href="#projects" class="active">Projects</a>
+          <a href="#contact" class="active">Contact</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
     <main>
-<section class="intro" id="home">
-    <div class="intro-left">
-        <h1>
-            Hi! I'm Mellow ~
-        </h1>
-        <br>
-        <h3>
-            FullStack Developer
-        </h3>
-        <br>
-        <p>
-            I create digital spaces that feel effortless to use and impossible to forget.
-                            Whether it’s the sleek front-end you see or the powerful back-end you don’t,
-                            I make the web feel… well, mellow.
-        </p>
-        <span class="subline">Building the web, one smooth interaction at a time...</span>
-        <br>
-        <div class="buttons">
+      <section class="intro" id="home">
+        <div class="intro-left">
+          <h1>Hi! I'm Mellow ~</h1>
+          <br />
+          <h3>FullStack Developer</h3>
+          <br />
+          <p>
+            I create digital spaces that feel effortless to use and impossible to forget. Whether it’s the sleek
+            front-end you see or the powerful back-end you don’t, I make the web feel… well, mellow.
+          </p>
+          <span class="subline">Building the web, one smooth interaction at a time...</span>
+          <br />
+          <div class="buttons">
             <div class="intro-btn">
-                <button class="project"><a href="#projects">View Projects</a></button>
-                <button class="contacts"><a href="#contact">Contact Me</a></button>
+              <button class="project"><a href="#projects">View Projects</a></button>
+              <button class="contacts"><a href="#contact">Contact Me</a></button>
             </div>
             <div class="resume">
-                <a href="https://drive.google.com/uc?export=download&id=1mY7QXvrquWzoyqdHrSYFcLfyraL9GB5I" target="_blank" style="color: var(--text-white);text-decoration: none;" aria-label="Download">
-                    <i class="fa-solid fa-download"></i>
-                    <span></span>
-                </a>
+              <a
+                href="https://drive.google.com/uc?export=download&id=1mY7QXvrquWzoyqdHrSYFcLfyraL9GB5I"
+                target="_blank"
+                style="color: var(--text-white); text-decoration: none"
+                aria-label="Download"
+              >
+                <i class="fa-solid fa-download"></i>
+                <span></span>
+              </a>
             </div>
+          </div>
+          <a
+            class="mobile-download"
+            href="https://drive.google.com/file/d/1mY7QXvrquWzoyqdHrSYFcLfyraL9GB5I/view"
+            target="_blank"
+            style="color: var(--text-white); text-decoration: none"
+            >Download CV</a
+          >
         </div>
-        <a class="mobile-download" href="https://drive.google.com/file/d/1mY7QXvrquWzoyqdHrSYFcLfyraL9GB5I/view"  target="_blank" style="color: var(--text-white);text-decoration: none;">Download CV</a>
-    </div>
-    <div class="intro-right">
-        <div class="code-container">
+        <div class="intro-right">
+          <div class="code-container">
             <div class="code">
-                <picture>
-                    <source srcset="assets/pfp.avif" type="image/avif">
-                    <source srcset="assets/pfp.webp" type="image/webp">
-                    <img src="assets//pfp.jpg" class="pfpimg" width="1200" height="800" alt="Hero image" fetchpriority="high">
-                </picture>
+              <picture>
+                <source srcset="assets/pfp.avif" type="image/avif" />
+                <source srcset="assets/pfp.webp" type="image/webp" />
+                <img
+                  src="assets//pfp.jpg"
+                  class="pfpimg"
+                  width="1200"
+                  height="800"
+                  alt="Hero image"
+                  fetchpriority="high"
+                />
+              </picture>
             </div>
+          </div>
         </div>
-    </div>
-    <button id="scrollToTopBtn" class="scrollBtn"><i class="fa-solid fa-angle-up"></i></button>
-    </section>
-           <div class="big balls"></div>
-        <div class="small balls"></div>
+        <button id="scrollToTopBtn" class="scrollBtn"><i class="fa-solid fa-angle-up"></i></button>
+      </section>
+      <div class="big balls"></div>
+      <div class="small balls"></div>
 
-
-    <section class="about" id="about">
+      <section class="about" id="about">
         <div class="head">
-        <h1 class="about-title">About Me</h1>
+          <h1 class="about-title">About Me</h1>
         </div>
         <p class="about-text fade">I'm passionate about creating exceptional digital experiences</p>
         <div class="about-container fade">
-        <div class="me fade">
-        <div class="journey fade">
-            <h2>Me</h2>
-            <p>
-                My name is Adesina 'Mellow' Olajide and I'm a Full-stack developer with over 2 years of experience.
-                From crafting intuitive frontends to designing robust APIs, I deliver quality code that drives real impact.
-            </p>
-        </div>
-        <!-- <br> -->
-        <div class="job fade">
-            <h2>What I Do</h2>
-            <p>
-                I focus on full-stack development, from crafting pixel-perfect user interfaces to building robust backend systems.
-                 I believe in clean code, beautiful design, and seamless user experiences that make a lasting impact.
-            </p>
-        </div>
-        <div class="mini-skills fade">
-            <span class="skill-bubble">React</span>
-            <span class="skill-bubble">Javascript</span>
-            <span class="skill-bubble">HTML</span>
-            <span class="skill-bubble">CSS</span>
-            <span class="skill-bubble">Node.js</span>
-            <span class="skill-bubble">Mongo DB</span>
-            <span class="skill-bubble">Docker</span>
-            <span class="skill-bubble">PHP</span>
-        </div>
-        </div>
+          <div class="me fade">
+            <div class="journey fade">
+              <h2>Me</h2>
+              <p>
+                My name is Adesina 'Mellow' Olajide and I'm a Full-stack developer with over 2 years of experience. From
+                crafting intuitive frontends to designing robust APIs, I deliver quality code that drives real impact.
+              </p>
+            </div>
+            <!-- <br> -->
+            <div class="job fade">
+              <h2>What I Do</h2>
+              <p>
+                I focus on full-stack development, from crafting pixel-perfect user interfaces to building robust
+                backend systems. I believe in clean code, beautiful design, and seamless user experiences that make a
+                lasting impact.
+              </p>
+            </div>
+            <div class="mini-skills fade">
+              <span class="skill-bubble">React</span>
+              <span class="skill-bubble">Javascript</span>
+              <span class="skill-bubble">HTML</span>
+              <span class="skill-bubble">CSS</span>
+              <span class="skill-bubble">Node.js</span>
+              <span class="skill-bubble">Mongo DB</span>
+              <span class="skill-bubble">Docker</span>
+              <span class="skill-bubble">PHP</span>
+            </div>
+          </div>
 
-        <div class="stats fade">
+          <div class="stats fade">
             <div class="projects-completed stat" fade>
-                <h1 class="stat-count" data-count="5">0</h1>
-                <p>Projects Completed</p>
+              <h1 class="stat-count" data-count="5">0</h1>
+              <p>Projects Completed</p>
             </div>
             <div class="experience stat fade">
-                <h1 class="stat-count" data-count="2">0</h1>
-                <p>Years Experience</p>
+              <h1 class="stat-count" data-count="2">0</h1>
+              <p>Years Experience</p>
             </div>
             <div class="clients stat fade">
-                <h1 class="stat-count" data-count="10">0</h1>
-                <p>Happy Clients</p>
+              <h1 class="stat-count" data-count="10">0</h1>
+              <p>Happy Clients</p>
             </div>
             <!-- <div class="technologies stat fade">
                 <h1 class="stat-count" data-count="15">15</h1>
                 <p>Technologies</p>
             </div> -->
+          </div>
         </div>
-
-        </div>
-    </section>
-    <section class="skills" id="skills">
+      </section>
+      <section class="skills" id="skills">
         <div class="head">
-            <h1 class="skill-title">Skills</h1>
+          <h1 class="skill-title">Skills</h1>
         </div>
         <p class="skill-text fade">Technologies I work with to bring ideas to life</p>
         <div class="skill-wrapper">
-            <div class="skill-category fade" id="category">
-                <div class="category-title">
-                    <img src="assets/frontend.svg" alt="front" class="skill-icon">
-                        <div class="title-bottom">
-                            <span>Frontend Development</span>
-                            <p>Responsive and mobile-first design</p>
-                        </div>
-                    <i class="fa-solid fa-angle-right"></i>
-                </div>
-                <div class="skill-card-wrapper">
-                <div class="skill-card">
-                    <i class="fa-brands fa-html5"></i>
-                    <p>HTML5</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-brands fa-react"></i>
-                    <p>React.js</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-brands fa-js"></i>
-                    <p>Javascript</p>
-                </div>
-                <div class="skill-card">
-                    <img src="assets/icons8-tailwind-css-96.svg" alt="tailwind">
-                    <p>Tailwind</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <p>CSS3</p>
-                </div>
-                </div>
+          <div class="skill-category fade" id="category">
+            <div class="category-title">
+              <img src="assets/frontend.svg" alt="front" class="skill-icon" />
+              <div class="title-bottom">
+                <span>Frontend Development</span>
+                <p>Responsive and mobile-first design</p>
+              </div>
+              <i class="fa-solid fa-angle-right"></i>
             </div>
-            <div class="skill-category fade">
-                <div class="category-title">
-                <img src="assets/backend.svg" alt="back" class="skill-icon">
-                <div class="title-bottom">
+            <div class="skill-card-wrapper">
+              <div class="skill-card">
+                <i class="fa-brands fa-html5"></i>
+                <p>HTML5</p>
+              </div>
+              <div class="skill-card">
+                <i class="fa-brands fa-react"></i>
+                <p>React.js</p>
+              </div>
+              <div class="skill-card">
+                <i class="fa-brands fa-js"></i>
+                <p>Javascript</p>
+              </div>
+              <div class="skill-card">
+                <img src="assets/icons8-tailwind-css-96.svg" alt="tailwind" />
+                <p>Tailwind</p>
+              </div>
+              <div class="skill-card">
+                <i class="fa-brands fa-css3-alt"></i>
+                <p>CSS3</p>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category fade">
+            <div class="category-title">
+              <img src="assets/backend.svg" alt="back" class="skill-icon" />
+              <div class="title-bottom">
                 <span>Backend Development</span>
                 <p>APIs, server logic and auth</p>
-                </div>
-                <i class="fa-solid fa-angle-right"></i>
-                </div>
-               <div class="skill-card-wrapper">
-                <div class="skill-card">
-                    <i class="fa-brands fa-node"></i>
-                    <p>Node.js</p>
-                </div>
-                <div class="skill-card">
-                    <i class="bxl bx-express-js"></i>
-                    <p>Express.js</p>
-                </div>
-                <div class="skill-card">
-                    <img src="assets/api.svg" alt="api">
-                    <p>REST APIs</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-brands fa-php"></i>
-                    <p>PHP</p>
-                </div>
-                </div>
+              </div>
+              <i class="fa-solid fa-angle-right"></i>
             </div>
-            <div class="skill-category fade">
-                <div class="category-title">
-                <img src="assets/db.svg" alt="db" class="skill-icon">
-                   <div class="title-bottom">
+            <div class="skill-card-wrapper">
+              <div class="skill-card">
+                <i class="fa-brands fa-node"></i>
+                <p>Node.js</p>
+              </div>
+              <div class="skill-card">
+                <i class="bxl bx-express-js"></i>
+                <p>Express.js</p>
+              </div>
+              <div class="skill-card">
+                <img src="assets/api.svg" alt="api" />
+                <p>REST APIs</p>
+              </div>
+              <div class="skill-card">
+                <i class="fa-brands fa-php"></i>
+                <p>PHP</p>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category fade">
+            <div class="category-title">
+              <img src="assets/db.svg" alt="db" class="skill-icon" />
+              <div class="title-bottom">
                 <span>Database and storage</span>
                 <p>Relational & NoSQL data storage</p>
-                </div>
-                <i class="fa-solid fa-angle-right"></i>
-                </div>
-                 <div class="skill-card-wrapper">
-                    <div class="skill-card">
-                        <img src="assets/postgres.svg" alt="postgres">
-                        <p>PostgresSQL</p>
-                    </div>
-                    <div class="skill-card">
-                        <img src="assets/mongo.svg" alt="mongo">
-                        <p>MongoDB</p>
-                    </div>
-                </div>
+              </div>
+              <i class="fa-solid fa-angle-right"></i>
             </div>
-            <div class="skill-category fade">
-                <div class="category-title">
-                <img src="assets/tools.svg" alt="tools" class="skill-icon">
-                   <div class="title-bottom">
+            <div class="skill-card-wrapper">
+              <div class="skill-card">
+                <img src="assets/postgres.svg" alt="postgres" />
+                <p>PostgresSQL</p>
+              </div>
+              <div class="skill-card">
+                <img src="assets/mongo.svg" alt="mongo" />
+                <p>MongoDB</p>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category fade">
+            <div class="category-title">
+              <img src="assets/tools.svg" alt="tools" class="skill-icon" />
+              <div class="title-bottom">
                 <span>Tools & Technologies </span>
                 <p>Deployment and version control</p>
-                </div>
-                <i class="fa-solid fa-angle-right mid"></i>
-                </div>
-                <div class="skill-card-wrapper">
-                    <div class="skill-card">
-                        <i class="fa-brands fa-git-alt"></i>
-                        <p>Git</p>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fa-brands fa-github"></i>
-                        <p>GitHub</p>
-                    </div>
-                    <div class="skill-card">
-                        <img src="assets/vite.svg" alt="vite">
-                        <p>Vite</p>
-                    </div> 
-                    <div class="skill-card">
-                        <img src="assets//vercel.svg">
-                        <p>Vercel</p>
-                    </div>
-                </div>
+              </div>
+              <i class="fa-solid fa-angle-right mid"></i>
             </div>
+            <div class="skill-card-wrapper">
+              <div class="skill-card">
+                <i class="fa-brands fa-git-alt"></i>
+                <p>Git</p>
+              </div>
+              <div class="skill-card">
+                <i class="fa-brands fa-github"></i>
+                <p>GitHub</p>
+              </div>
+              <div class="skill-card">
+                <img src="assets/vite.svg" alt="vite" />
+                <p>Vite</p>
+              </div>
+              <div class="skill-card">
+                <img src="assets//vercel.svg" />
+                <p>Vercel</p>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-    <section class="projects-section" id="projects">
+      </section>
+      <section class="projects-section" id="projects">
         <div class="head">
-            <h1 class="projects-title">Projects</h1>
+          <h1 class="projects-title">Projects</h1>
         </div>
         <p class="projects-text fade">Things I've built—from full-stack apps to sleek frontends</p>
         <div class="projects-grid fade">
-            <article class="project-card project-card--featured">
-                <span class="project-card__badge">Full-stack</span>
-                <div class="project-card-inner">
-                    <span class="project-card__icon" aria-hidden="true"><i class="fa-solid fa-robot"></i></span>
-                    <h2>Mellow MD</h2>
-                    <p>A multi-device WhatsApp bot that stays connected across phones and browsers. Handles automation, commands, and messaging with a dashboard for control and monitoring, powered by Node.js and Baileys.js. Built for reliability and ease of use.</p>
-                    <div class="project-tags">
-                        <span class="project-tag">React</span>
-                        <span class="project-tag">Node.js</span>
-                        <span class="project-tag">Express</span>
-                        <span class="project-tag">Baileys.js</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://pairing-site-rho.vercel.app/" class="project-link project-link--demo" aria-label="Live demo of Mellow MD" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live demo
-                        </a>
-                        <a href="https://github.com/DemmyJay-99/Mellow-MD" class="project-link project-link--github" aria-label="Mellow MD on GitHub" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-brands fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-            </article>
-            <!-- <article class="project-card project-card--minimal">
-                <span class="project-card__badge">Frontend</span>
-                <div class="project-card-inner">
-                    <span class="project-card__icon" aria-hidden="true"><i class="fa-solid fa-palette"></i></span>
-                    <h2>Quiet Commerce</h2>
-                    <p>E-commerce without the noise. Clean cart flow, thoughtful filtering, and a checkout that doesn't make you want to leave. Tailwind + vanilla JS—no framework bloat, just intent.</p>
-                    <div class="project-tags">
-                        <span class="project-tag">Tailwind</span>
-                        <span class="project-tag">JavaScript</span>
-                        <span class="project-tag">Responsive</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link project-link--demo" aria-label="Live demo of Quiet Commerce" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live demo
-                        </a>
-                        <a href="#" class="project-link project-link--github" aria-label="Quiet Commerce on GitHub" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-brands fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-            </article> -->
+          <article class="project-card project-card--featured">
+            <span class="project-card__badge">Full-stack</span>
+            <div class="project-card-inner">
+              <span class="project-card__icon" aria-hidden="true"><i class="fa-solid fa-robot"></i></span>
+              <h2>Mellow MD</h2>
+              <p>
+                A multi-device WhatsApp bot that stays connected across phones and browsers. Handles automation,
+                commands, and messaging with a dashboard for control and monitoring, powered by Node.js and Baileys.js.
+                Built for reliability and ease of use.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">React</span>
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">Express</span>
+                <span class="project-tag">Baileys.js</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://pairing-site-rho.vercel.app/"
+                  class="project-link project-link--demo"
+                  aria-label="Live demo of Mellow MD"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live demo
+                </a>
+                <a
+                  href="https://github.com/DemmyJay-99/Mellow-MD"
+                  class="project-link project-link--github"
+                  aria-label="Mellow MD on GitHub"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card project-card--minimal">
+            <span class="project-card__badge">Frontend</span>
+            <div class="project-card-inner">
+              <span class="project-card__icon" aria-hidden="true"><i class="fa-solid fa-utensils"></i></span>
+              <h2>Chikini Monie Restaurant</h2>
+              <p>
+                Mock design for a restaurant website showcasing menu items, services, and reservations. Built with clean
+                HTML, CSS, and JavaScript for a responsive and interactive user experience.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://chikini-monie.vercel.app/"
+                  class="project-link project-link--demo"
+                  aria-label="Live demo of Chikini Monie Restaurant"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live demo
+                </a>
+                <a
+                  href="https://github.com/DemmyJay-99/Chikini_monie"
+                  class="project-link project-link--github"
+                  aria-label="Chikini Monie Restaurant on GitHub"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </article>
         </div>
-    </section>
-    <section class="contact" id="contact">
+      </section>
+      <section class="contact" id="contact">
         <div class="title">
-        <h1>Get in Touch</h1>
-        <p class="contact-paragraph">
-        Have a project in mind or just want to say hello? <br>I'm always open to discussing new opportunities, creative ideas, or potential collaborations.
-        </p>
+          <h1>Get in Touch</h1>
+          <p class="contact-paragraph">
+            Have a project in mind or just want to say hello? <br />I'm always open to discussing new opportunities,
+            creative ideas, or potential collaborations.
+          </p>
         </div>
-    <div class="contact-tables">
-        <div class="table-right table">
+        <div class="contact-tables">
+          <div class="table-right table">
             <h2>Contact Information</h2>
             <p class="contact-text">
-                Feel free to reach out to me through any of the following channels. I typically respond within 24 hours during business days.
+              Feel free to reach out to me through any of the following channels. I typically respond within 24 hours
+              during business days.
             </p>
             <div class="contact-details">
-                <div class="item slide">
-                    <p><i class="fa-solid fa-envelope"></i></p>
-                    <div class="item-content">
-                        <span class="email-p">E-mail</span>
-                        <!-- <br> -->
-                        <span>demmyjyd@gmail.com</span>
-                    </div>
+              <div class="item slide">
+                <p><i class="fa-solid fa-envelope"></i></p>
+                <div class="item-content">
+                  <span class="email-p">E-mail</span>
+                  <!-- <br> -->
+                  <span>demmyjyd@gmail.com</span>
                 </div>
-                <div class="item slide">
-                    <p><i class="fa-solid fa-phone"></i></p>
-                    <div class="item-content">
-                        <span class="email-p">Phone</span>
-                        <span>+234 81 052 02390</span>
-                    </div>
+              </div>
+              <div class="item slide">
+                <p><i class="fa-solid fa-phone"></i></p>
+                <div class="item-content">
+                  <span class="email-p">Phone</span>
+                  <span>+234 81 052 02390</span>
                 </div>
-                <div class="item slide">
-                    <p><i class="fa-solid fa-location-dot"></i></p>
-                    <div class="item-content">
-                        <span class="email-p">Location</span>
-                        <!-- <br> -->
-                        <span>Akure, Ondo State</span>
-                    </div>
+              </div>
+              <div class="item slide">
+                <p><i class="fa-solid fa-location-dot"></i></p>
+                <div class="item-content">
+                  <span class="email-p">Location</span>
+                  <!-- <br> -->
+                  <span>Akure, Ondo State</span>
                 </div>
+              </div>
             </div>
             <div class="link-section">
-            <h3>Find me on</h3>
-            <div class="links">
-              <a href="https://github.com/DemmyJay-99" aria-label="GitHub" target="_blank">
-                <i class="fa-brands fa-github"></i>
-              </a>
-              <a href="https://www.youtube.com/@mellow-w3s" aria-label="Youtube" target="_blank">
-                <i class="fa-brands fa-youtube"></i>
-              </a>
-              <a href="https://wa.me/2348105202390" aria-label="Whatsapp" target="_blank">
-                <i class="fa-brands fa-whatsapp"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/olajide-adesina-606541319/" aria-label="LinkedIn" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-              <a href="https://codepen.io/DemmyJay-99" aria-label="Codepen" target="_blank">
-                <i class="fa-brands fa-codepen"></i>
-              </a>
+              <h3>Find me on</h3>
+              <div class="links">
+                <a href="https://github.com/DemmyJay-99" aria-label="GitHub" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.youtube.com/@mellow-w3s" aria-label="Youtube" target="_blank">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://wa.me/2348105202390" aria-label="Whatsapp" target="_blank">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/olajide-adesina-606541319/" aria-label="LinkedIn" target="_blank">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://codepen.io/DemmyJay-99" aria-label="Codepen" target="_blank">
+                  <i class="fa-brands fa-codepen"></i>
+                </a>
+              </div>
             </div>
-            </div>
-        </div>
-        <div class="table-left table">
+          </div>
+          <div class="table-left table">
             <h2>Send a message</h2>
             <form id="form">
-                <label>Your Name</label>
-                <input type="text" placeholder="John Doe" class="fade" id="name" required>
-                <label class="fade">Your E-mail</label>
-                <input type="email" placeholder="example@gmail.com" class="fade" id="email" required>
-                <label class="fade">Subject</label>
-                <input type="text" placeholder="Subject" class="fade" id="subject" required>
-                <label class="fade">Message</label>
-                <textarea placeholder="Message" class="fade" id="message" required></textarea>
-                <button class="message-btn fade" id="btn" onclick="sendEmail()" aria-label="Send message">
-                    <span id="span">Send Message
-                        <i class="fa-solid fa-paper-plane"></i>
-                    </span> 
-                    <div class="container" id="container">
-                        <div class="item"></div>
-                    </div>
-                </button>
+              <label>Your Name</label>
+              <input type="text" placeholder="John Doe" class="fade" id="name" required />
+              <label class="fade">Your E-mail</label>
+              <input type="email" placeholder="example@gmail.com" class="fade" id="email" required />
+              <label class="fade">Subject</label>
+              <input type="text" placeholder="Subject" class="fade" id="subject" required />
+              <label class="fade">Message</label>
+              <textarea placeholder="Message" class="fade" id="message" required></textarea>
+              <button class="message-btn fade" id="btn" onclick="sendEmail()" aria-label="Send message">
+                <span id="span"
+                  >Send Message
+                  <i class="fa-solid fa-paper-plane"></i>
+                </span>
+                <div class="container" id="container">
+                  <div class="item"></div>
+                </div>
+              </button>
             </form>
+          </div>
         </div>
-    </div>
-    </section>
+      </section>
     </main>
-<footer>
-  <div class="footer-name">
-    <div class="mellow">
-    <span class="footer-mel">Mellow</span>
-    <span id="date"></span>
-    </div>
-  </div>
-  <div class="footer-links">
-    <a href="https://github.com/DemmyJay-99" aria-label="Github" target="_blank">
-      <i class="fa-brands fa-github"></i>
-    </a>
-    <a href="https://www.youtube.com/@mellow-w3s" aria-label="Youtube" target="_blank">
-      <i class="fa-brands fa-youtube"></i>
-    </a>
-    <a href="https://wa.me/2348105202390" aria-label="Whatsapp" target="_blank">
-      <i class="fa-brands fa-whatsapp"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/olajide-adesina-606541319/" aria-label="LinkedIn" target="_blank">
-      <i class="fa-brands fa-linkedin"></i>
-    </a>
-    </div>
-</footer>
+    <footer>
+      <div class="footer-name">
+        <div class="mellow">
+          <span class="footer-mel">Mellow</span>
+          <span id="date"></span>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/DemmyJay-99" aria-label="Github" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.youtube.com/@mellow-w3s" aria-label="Youtube" target="_blank">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://wa.me/2348105202390" aria-label="Whatsapp" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/olajide-adesina-606541319/" aria-label="LinkedIn" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </footer>
     <script src="scripts/header.js" defer></script>
     <script src="scripts/stats.js" defer></script>
     <script src="scripts/main.js" defer></script>
     <script src="scripts/scroll.js" defer></script>
-    <script src="scripts/date.js"defer></script>
+    <script src="scripts/date.js" defer></script>
     <script src="scripts/skill.js" defer></script>
     <script src="scripts/email.js" defer></script>
-</body>
+  </body>
 </html>
